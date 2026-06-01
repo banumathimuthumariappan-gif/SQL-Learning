@@ -1,0 +1,10 @@
+CREATE TABLE employees(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	salary DECIMAL(10, 2),
+	joiningDate DATE,
+	createdAt DATETIME,
+	is_active BOOLEAN DEFAULT TRUE,
+	notes TEXT
+);
